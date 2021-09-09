@@ -1,0 +1,27 @@
+<aura:component>
+    <div class="slds-card">
+        <div class="colleage">
+            colleage Service
+        </div>
+        <lightning:card  title="Hello">
+            <div class="slds-box">
+            <div class="slds-grid slds-grid_vertical  slds-p-left_x-large">
+                <div class="slds-col slds-p-top_x-large ">      
+                    <div class="ButtonC">Register Now</div>
+                </div>
+                
+                <div class="slds-col slds-p-top_x-large "> 
+                     <div class="ButtonC">Team Profile"</div>
+                    	<label>register 2019-2020</label>
+                    
+                </div>
+                <div class="slds-col slds-p-top_x-large "> 
+                    <div class="ButtonC">Manage roster</div>
+                </div>
+            </div>
+                
+                </div>
+        </lightning:card>
+        
+    </div>
+</aura:component>

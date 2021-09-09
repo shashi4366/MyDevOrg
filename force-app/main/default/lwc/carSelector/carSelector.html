@@ -1,0 +1,25 @@
+<template>
+<lightning-card  title="Select the brand ">
+    
+    <div class="slds-box  slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_none">
+        <lightning-layout horizontal-align="spread" >
+            <lightning-layout-item padding="around-small" onclick={handleClickDucati}>
+                <span class="slds-avatar slds-avatar--large slds-input__icon ">
+                    <img src={Ducati}>
+                </span>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small " onclick={handleClickBMW}>
+                <span class="slds-avatar slds-avatar--large slds-input__icon ">
+                    <img src={husqvarna}>
+                </span>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small" onclick={handleClickTriumph}>
+                <span class="slds-avatar slds-avatar--large slds-input__icon ">
+                    <img src={triumph}>
+                </span>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+
+</lightning-card>
+</template>

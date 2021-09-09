@@ -1,0 +1,31 @@
+<template>
+    <div class="mySidenav slds-grid">
+        <lightning-icon icon-name={iconName} alternative-text="toggle button" title="Click to toggle"  class="slds-col leftIcon" onclick={handleClick}></lightning-icon>
+    </div>
+  <template if:false={showPannel}>
+    <lightning-tabset variant="vertical">
+            <template if:true={SectionsData}>
+              <template for:each={SectionsData} for:item="section">
+                <div key={section.id}>
+                    <lightning-tab label={section.heading} >
+                        <c-generic-record-form record-id={recordId} object-api-name={objectApiName} layout-rows={section.layoutRows}></c-generic-record-form>
+                    </lightning-tab>
+                </div>
+              </template>
+            </template>  
+    </lightning-tabset>
+    </template>
+    <template if:true={showPannel}>
+        <lightning-tabset variant="scoped">
+            <template if:true={SectionsData}>
+                <template for:each={SectionsData} for:item="section">
+                    <div key={section.id}>
+                        <lightning-tab label={section.heading} >
+                            <c-generic-record-form record-id={recordId} object-api-name={objectApiName} layout-rows={section.layoutRows}></c-generic-record-form>
+                        </lightning-tab>
+                    </div>
+                </template>
+            </template>
+        </lightning-tabset>
+    </template>
+</template>

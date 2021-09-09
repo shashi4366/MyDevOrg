@@ -1,0 +1,14 @@
+<apex:page controller="ContactsListWithController">
+    <apex:form >
+        <apex:pageBlock title="Contacts List" id="contacts_list">
+            <!-- Contacts List -->
+            <apex:pageBlockTable value="{! contacts }" var="ct">
+                <!--The getContacts() method is called a getter method, and it’s a general pattern, where {! someExpression } in your Visualforce markup automatically connects to a method named getSomeExpression() in your controller. This is the simplest way for your page to get access to the data it needs to display.-->
+                <apex:column value="{! ct.FirstName }"/>
+                <apex:column value="{! ct.LastName }"/>
+                <apex:column value="{! ct.Title }"/>
+                <apex:column value="{! ct.Email }"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
