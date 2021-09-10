@@ -9,6 +9,7 @@ const COLUMNS = [
     { label: 'Annual Revenue', fieldName: LAST_NAME.fieldApiName, type: 'text' },
     { label: 'EMAIL', fieldName: EMAIL.fieldApiName, type: 'email' }];
 export default class ContactList extends LightningElement {
+    // my comment goes here
     
   /*  columns = COLUMNS;
     @wire(getContacts)
